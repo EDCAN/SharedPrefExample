@@ -24,10 +24,10 @@ editor = sharedPreferences.edit();
 
 ```java
 // String, int, boolean, Long, float 등 저장 가능
-String s = editor.putString("키값", "데이터");
-int a = editor.putInt("키값", 데이터);
-boolean b = editor.putBoolean("키값", 데이터);
-long l = editor.putLong("키값", "데이터");
+editor.putString("키값", "데이터");
+editor.putInt("키값", 데이터);
+editor.putLong("키값", "데이터");
+editor.putBoolean("키값", 데이터);
 
 // 작업 후에는 반드시 커밋
 editor.commit();
